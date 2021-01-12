@@ -1,0 +1,304 @@
+body {
+  width: 500px;
+  text-align: center;
+  background-image: url(/Project_03.01/background_pic.JPG);
+  height: fit-content;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 17px;
+}
+
+body ul li {
+  border-radius: 20px;
+  list-style: none;
+  display: inline;
+  margin: 20px;
+  position: relative;
+  animation-name: listlist;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+
+@keyframes listlist {
+  0% {
+    transform: translateX(20px) translateY(30px);
+  }
+  25% {
+    transform: translateX(20px) translateY(70px);
+  }
+  50% {
+    transform: translateX(20px) translateY(50px);
+  }
+  75% {
+    transform: translateX(20px) translateY(30px);
+  }
+}
+
+li:hover {
+  transform: translateY(10px);
+  animation-name: listanim;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+  opacity: 0.5;
+}
+
+@keyframes listanim {
+  0% {
+    transform: translateX(20px) translateY(30px);
+  }
+  25% {
+    transform: translateX(20px) translateY(35px);
+  }
+  50% {
+    transform: translateX(20px) translateY(80px);
+  }
+  75% {
+    transform: translateX(20px) translateY(100px);
+  }
+}
+
+ul li img {
+  height: 165px;
+  width: 170px;
+  box-shadow: 4px 4px black;
+  border-radius: 20px;
+  transform: translateY(30px);
+  transition: all 20s ease;
+}
+.ulul {
+  display: flex;
+  flex-direction: row;
+}
+.ulul li:nth-child(1) {
+  transform: rotate(30deg);
+}
+.ulul li:nth-child(2) {
+  transform: rotate(-30deg);
+}
+
+.button {
+  padding: 5px 10px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: orange;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {
+  background-color: green;
+}
+
+.button:active {
+  background-color: black;
+  box-shadow: 0 5px #666;
+  transform: translateY(15px);
+}
+img {
+  height: 300vh;
+}
+h1,
+h2 {
+  background: royalblue;
+}
+
+i {
+  height: 100px;
+}
+.life {
+  background-color: cornflowerblue;
+  height: 240px;
+  width: 505px;
+  border: solid black 2px;
+  float: left;
+  transform: translateY(80px);
+}
+.two,
+.one,
+.four,
+.three {
+  margin: 0;
+  padding: 0;
+  height: 30px;
+}
+
+.new {
+  border: solid black 2px;
+  height: 765px;
+  background-color: cornflowerblue;
+  position: relative;
+  right: -550px;
+  top: -720px;
+}
+.yoni {
+  border: solid black 2px;
+  width: 1053px;
+}
+/* .image1 {
+  transform: translateX(70px);
+}
+
+.image1 {
+  width: 350px;
+  height: 300px;
+  float: left;
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  -webkit-animation: test 12s infinite;
+  animation-name: test;
+  animation-duration: 14s;
+  animation-delay: 0s;
+  animation: test 12s infinite repeat;
+} */
+
+@keyframes test {
+  0% {
+    background-image: url(/Project_03.01/army_2.jpg);
+    transform: translateX(10px) translateY(0px);
+  }
+  25% {
+    background-image: url(/Project_03.01/profile_picture.png);
+    transform: translateX(120px);
+  }
+  50% {
+    background-image: url(/Project_03.01/profile_pic.JPG);
+    transform: translateX(100px) translateY(50px);
+  }
+  75% {
+    background-image: url(/Project_03.01/army_1.jpg);
+    transform: translateX(20px) translateY(50px);
+  }
+}
+
+.nav_bar {
+  background-color: black;
+  border: black solid 1px;
+  color: white;
+  transform: translateX(1100px) translateY(-1100px);
+  height: 265px;
+  width: 200px;
+  animation-name: navbar;
+  animation-duration: 15s;
+  animation-delay: 0s;
+  animation-direction: alternate-reverse;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+.basket {
+  background-image: url(/icons/basket.svg);
+  background-repeat: no-repeat;
+  transform: translateX(450px) translateY(-115px);
+}
+
+@keyframes navbar {
+  0% {
+    transform: translateY(-1200px) translateX(1100px);
+  }
+  50% {
+    transform: translateY(-900px) translateX(1100px);
+  }
+  100% {
+    transform: translateY(-1200px) translateX(1100px);
+  }
+}
+
+.nav_1,
+.nav_2,
+.nav_3,
+.nav_4,
+.nav_5 {
+  height: 25px;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  bottom: 0;
+}
+.nav_1:hover,
+.nav_2:hover,
+.nav_3:hover,
+.nav_4:hover,
+.nav_5:hover {
+  cursor: pointer;
+  background-color: blue;
+}
+
+.nav_1:active,
+.nav_2:active,
+.nav_3:active,
+.nav_4:active,
+.nav_5:active {
+  background-color: green;
+}
+/* -------Code animation tryouts : ------*/
+/* .image1 .image2 {
+  z-index: 1;
+  animation-name: profilepic1;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  animation-direction: alternate;
+}
+.image1 .image3 {
+  z-index: 1;
+  animation-name: profilepic2;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 15s;
+  animation-direction: alternate;
+}
+
+.image1 .image4 {
+  z-index: 1;
+  animation-name: profilepic3;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 15s;
+  animation-direction: alternate;
+}
+
+@keyframes profilepic1 {
+  0% {
+    opacity: 1;
+    background-image: url(/Project_03.01/army_2.jpg);
+  }
+  55% {
+    opacity: 0;
+    background-image: url(/Project_03.01/army_1.jpg);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes profilepic2 {
+  0% {
+    opacity: 0;
+  }
+  55% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes profilepic3 {
+  0% {
+    opacity: 0;
+  }
+  55% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} */

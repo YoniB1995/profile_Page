@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @-webkit-keyframes test{
+    0%{
+        background-image: url(/Project_03.01/army_1.jpg);
+    }
+    20%{
+        background-image: url(/Project_03.01/army_2.jpg);
+    }
+    40%{
+        background-image: url(/Project_03.01/profile_pic.JPG);
+    }
+    60%{
+        background-image: url('path');
+    }
+    80%{
+        background-image: url('path');
+    }
+    100%{
+        background-image: url('path');
+    }
+}
+
+div{
+    background: blue;
+    width: 350px;
+    height: 250px;
+    float: left;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    -webkit-animation: test 12s infinite;
+    animation-name: test;
+    animation: test 12s infinite;
+    -webkit-animation-timing-function: steps(1, end);
+    animation-timing-function: steps(1, end);
+}
+</style>
+<body>
+    <div>
+        test
+    </div>
+</body>
+</html>
