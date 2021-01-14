@@ -49,10 +49,10 @@ li:hover {
 
 @keyframes listanim {
   0% {
-    transform: translateX(20px) translateY(30px);
+    transform: translateX(20px) translateY(-200px);
   }
   25% {
-    transform: translateX(20px) translateY(35px);
+    transform: translateX(20px) translateY(-20px);
   }
   50% {
     transform: translateX(20px) translateY(80px);
